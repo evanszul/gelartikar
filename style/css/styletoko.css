@@ -1,11 +1,14 @@
 html{
   font-family: sans-serif;
 }
+
 body{
   margin: 0px;
   background-color: #f1f1f1;
 }
+
 a{
+  color: #212121;
   text-decoration: none;
 }
 
@@ -102,11 +105,53 @@ a{
 
 .bg-white{
   background-color: white;
+  border-bottom: 2px solid #2196F3;
 }
 
 /* Featured Image */
 .imgfeatured{
   padding: 5px;
+}
+
+/*mini navbar */
+.mini-nav{
+  margin-top: -5px;
+  margin-bottom: -5px;
+  font-size: 12px;
+}
+
+.nav{
+
+}
+
+/* Input Group */
+.input-group{
+  margin-top: 15px;
+}
+
+.input-text{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  color: #212121;
+  width: 80%;
+}
+
+/* Button */
+.button{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #2196F3;
+
 }
 
 /* Lantai */
