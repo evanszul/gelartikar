@@ -91,13 +91,18 @@ a{
     width: 100%;
 }
 
+.pull-right{
+  float: right;
+}
+
 
 /* Bagian Kaki (footer) */
 .footer{
   color: white;
   width: 100%;
   margin-top: 40px;
-  background-color: #333;
+  border-top: 5px solid #2196F3;
+  background-color: #1976D2;
 }
 .panel-footer{
   margin-left: 5px;
@@ -108,9 +113,19 @@ a{
     font-size: 20px;
     font-weight: bold;
     margin: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FF4081;
 }
 
 .panel-footer-body a{
   color: white;
+}
+
+.panel-footer-body li{
+  list-style: none;
+}
+
+.footer-paling-bawah{
+    border-top: 3px solid #333;
+    background-color: #212121;
+    color: white;
 }
