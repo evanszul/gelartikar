@@ -163,8 +163,6 @@ h3 span{
 }
 
 .lantai{
-    background-color: white;
-    height: 500px;
     margin-bottom: 50px;
 }
 
@@ -178,6 +176,15 @@ h3 span{
   border-bottom: 5px solid #1976D2;
 }
 
+.lantai-body{
+  background-color: white;
+  height: 500px;
+}
+
+.lantai-gambar{
+  width: 100%;
+}
+
 /* Bagian Kaki (footer) */
 .footer{
   color: white;
@@ -186,6 +193,7 @@ h3 span{
   border-top: 5px solid #2196F3;
   background-color: #1976D2;
 }
+
 .panel-footer{
   margin-left: 5px;
   margin-right: 5px;
