@@ -1,3 +1,6 @@
+body {
+  background-color: #f0f0f0;
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -9,7 +12,7 @@
   height: auto;
   margin: 0 auto;
   margin-top: 100px;
-  background-color: #f0f0f0;
+  background-color: white;
   box-shadow: 2px 2px 16px 0px #757575;
   padding: 40px;
 }
@@ -47,8 +50,8 @@
 }
 
 .itpw:focus {
-  border-bottom: 3px solid #004d40;
-  color: #004d40
+  border-bottom: 3px solid #2196F3;
+  color: #2196F3;
 }
 
 .its:hover , .its:focus {
