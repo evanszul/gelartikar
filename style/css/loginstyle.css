@@ -1,6 +1,11 @@
 body {
   background-color: #f0f0f0;
 }
+
+a {
+  color: #757575;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -11,17 +16,11 @@ body {
   width: 350px;
   height: auto;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 80px;
   background-color: white;
-  box-shadow: 2px 2px 16px 0px #757575;
+  box-shadow: 2px 2px 8px 0px #2196F3;
+  border-radius: 5px;
   padding: 40px;
-}
-
-.center h2 {
-  font-size: 40px;
-  text-align: center;
-  color: #000000;
-  padding-bottom: 40px;
 }
 
 .fl {
@@ -62,7 +61,7 @@ body {
 .center p {
   margin: 20px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .center p a {
@@ -78,9 +77,6 @@ screen and (min-width:1500px) {
 }
 
 screen and (max-width:900px) {
-  #login {
-    background-size: 100% 100%;
-  }
 
   .its {
     width: 100%;
