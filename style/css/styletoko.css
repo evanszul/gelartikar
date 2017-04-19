@@ -189,6 +189,8 @@ h3 span{
 
 .lantai-gambar{
   width: 100%;
+  background-color: white;
+  padding-bottom: -5px;
 }
 
 /* Bagian Kaki (footer) */
