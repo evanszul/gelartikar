@@ -1,62 +1,107 @@
-{
-        margin: 0px;
-        padding: 0px;
-    }
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
 
-    html {
-        font-family: 'Open Sans', sans-serif;
-    }
+.center {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 16px 0px #757575;
+  padding: 40px;
+}
 
-    #login {
-        background: indigo;
-        width: 100%;
-        height: 13%;
-    }
+.center h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 40px;
+}
 
-    .upper {
-        padding: 5px 10% 0px 10%;
-        color: #fff;
-        margin: 0 auto;
-    }
+.fl {
+  width: 100%;
+}
 
-    .upper input {
-        padding: 3px;
-    }
+.itpw {
+  width: 92%;
+  padding: 13px 10px;
+  margin: 5px 0px;
+  background-color: #dbdbdb;
+  border: 3px solid #dbdbdb;
+  color: #757575;
+  transition: all 0.7s;
+}
 
-    .upper input:focus {
-        outline: none;
-    }
+.its {
+  width: 99.7%;
+  font-size: 19px;
+  color: #f5f5f5;
+  padding: 12px;
+  margin: 5px 0;
+  background-color: #2196F3;
+  border: none;
+  transition: all 0.4s;
+}
 
-    #blogin {
-        border: 0px;
-        color: #000;
-        background: #fff;
-        padding: 4px;
-        cursor: pointer;
-    }
+.itpw:focus {
+  border-bottom: 3px solid #004d40;
+  color: #004d40
+}
 
-    #blogin:hover {
-        box-shadow: 1px 2px 6px 2px;
-    }
+.its:hover , .its:focus {
+  opacity: 0.7;
+  cursor: pointer;
+}
 
+.center p {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
 
-    .register {
-        padding: 3% 8% 3% 10%;
-    }
+.center p a {
+  color: #757575;
+}
 
-    .register input {
-        padding: 10px;
-    }
+screen and (min-width:1500px) {
 
-    #footer {
-        bottom: 0;
-        width: 100%;
-        height: 30px;
-        background: indigo;
-    }
+  .center {
+    width: 350px;
+  }
 
-    .foot {
-        text-align: center;
-        line-height: 2;
-        font-style: oblique;
-    }
+}
+
+screen and (max-width:900px) {
+  #login {
+    background-size: 100% 100%;
+  }
+
+  .its {
+    width: 100%;
+  }
+
+  .itpw {
+    font-size: 14px;
+    width: 90%;
+    padding: 13px 3%;
+  }
+
+  .center {
+    width: 230px;
+  }
+
+  .center p {
+    font-size: 12px;
+  }
+
+}
+
+screen and (max-width:350px) {
+  .center {
+    padding: 20px;
+    width: 75%;
+  }
+}
