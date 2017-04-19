@@ -166,10 +166,13 @@ h3 span{
     color: #2196F3;
     border-radius: 2px;
     padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .lantai{
-    margin-bottom: 50px;
+  margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .lantai-header{
