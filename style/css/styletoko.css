@@ -172,7 +172,7 @@ h3 span{
 
 .lantai{
   margin-top: 20px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .lantai-header{
@@ -197,13 +197,13 @@ h3 span{
 
 /* card */
 .card{
-  color: white;
+  color: #212121
   clear: both;
   margin: 5px;
 }
 
 .card-header{
-  background-color: #1976D2;
+  border-bottom: 2px solid #2196F3;
   padding : 5px;
 }
 
@@ -218,12 +218,28 @@ h3 span{
   padding-right: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #1976D2;
+  border: 1px solid #fafafa;
 
 }
 
 .card-footer{
 
+}
+
+/* breadcrumb */
+.breadcrumb{
+    background-color: #2196F3;
+    margin: 5px;
+    padding : 5px;
+    color: white;
+}
+
+.breadcrumb-active{
+  font-weight: bold;
+}
+
+span a{
+  color: white;
 }
 
 /* Bagian Kaki (footer) */
@@ -259,4 +275,20 @@ h3 span{
     border-top: 3px solid #333;
     background-color: #212121;
     color: white;
+}
+
+/* Costume */
+.box-kategori{
+  margin: 5px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.judul-kategori{
+    font-size: 30px;
+}
+
+.jumlah-produk{
+  color: grey;
+  font-size: 15px;
 }
