@@ -197,7 +197,7 @@ h3 span{
 
 /* card */
 .card{
-  color: #212121
+  color: #212121;
   clear: both;
   margin: 5px;
 }
@@ -314,4 +314,41 @@ span a:hover{
   color: white;
   background-color: #2196F3;
   width: 93%;
+}
+
+/* Produk Content */
+
+.product-content{
+  padding: 5px;
+  border: 0.2px solid white;
+}
+
+.product-content:hover{
+  border: 0.2px solid #f6f6f6;
+}
+
+.product-image{
+  height: 370px;
+}
+
+.product-image img{
+  width: 100%;
+}
+
+.product-info{
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+
+.product-info b{
+  font-size: 15px;
+}
+
+.product-info span{
+  font-size: 12px;
+}
+
+.price{
+  color: #2196F3;
 }
