@@ -195,6 +195,37 @@ h3 span{
   background-color: white;
 }
 
+/* card */
+.card{
+  color: white;
+  clear: both;
+  margin: 5px;
+}
+
+.card-header{
+  background-color: #1976D2;
+  padding : 5px;
+}
+
+.card-header span{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card-body{
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #1976D2;
+
+}
+
+.card-footer{
+
+}
+
 /* Bagian Kaki (footer) */
 .footer{
   color: white;
