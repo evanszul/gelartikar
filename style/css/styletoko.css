@@ -214,10 +214,6 @@ h3 span{
 
 .card-body{
   color: black;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border: 1px solid #fafafa;
 
 }
@@ -228,18 +224,25 @@ h3 span{
 
 /* breadcrumb */
 .breadcrumb{
-    background-color: #2196F3;
-    margin: 5px;
-    padding : 5px;
-    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: #333;
 }
 
 .breadcrumb-active{
   font-weight: bold;
+  font-size: 15px;
 }
 
 span a{
-  color: white;
+  color: #333;
+  font-size: 15px;
+}
+span a:hover{
+  color: #2196F3;
+  text-decoration: underline;
 }
 
 /* Bagian Kaki (footer) */
@@ -279,7 +282,9 @@ span a{
 
 /* Costume */
 .box-kategori{
-  margin: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   padding-bottom: 15px;
   border-bottom: 1px solid #BDBDBD;
 }
@@ -291,4 +296,22 @@ span a{
 .jumlah-produk{
   color: grey;
   font-size: 15px;
+}
+
+.list-brand{
+  margin-left:5px;
+  margin-right:5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 93%;
+}
+
+.list-brand:hover{
+  margin-left:5px;
+  margin-right:5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  background-color: #2196F3;
+  width: 93%;
 }
