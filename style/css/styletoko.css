@@ -135,7 +135,7 @@ a{
   margin-top: 15px;
 }
 
-.input-text{
+.input-group input{
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
@@ -386,7 +386,95 @@ span a:hover{
 /* Sidebar product */
 .sidebar-product{
   padding-left: 5px;
-  padding-right: 5px; 
+  padding-right: 5px;
   border-left: 1px dashed #BDBDBD;
   height: 100%;
+}
+
+/* box deskripsi */
+.tab_container{
+  width:90%;
+  margin:0 auto;
+  padding-top:10px;
+  position:relative
+}
+
+.tab_container input,section{
+  clear:both;
+  padding-top:10px;
+  display:none
+}
+
+.tab_container label{
+  font-weight:700;
+  font-size:14px;
+  display:block;
+  float:left;
+  width:20%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left:1.5em;
+  padding-right:1.5em;
+  color:#757575;
+  cursor:pointer;
+  text-decoration:none;
+  text-align:center;
+  background:#fff;
+  border-bottom:2px solid #f0f0f0;
+}
+
+#tab1:checked ~ #content1,#tab2:checked ~ #content2,#tab3:checked ~ #content3,#tab4:checked ~ #content4,#tab5:checked ~ #content5{
+  display:block;
+  padding:20px;
+  font-size: 13px;
+  background:#fff;
+  color:#333;
+  border-bottom:2px solid #f0f0f0;
+}
+
+#content2 table{
+  font-size: 13px;
+}
+
+.tab_container .tab-content p,.tab_container .tab-content h3{
+  -webkit-animation:fadeInScale 0.7s ease-in-out;
+  -moz-animation:fadeInScale 0.7s ease-in-out;
+  animation:fadeInScale 0.7s ease-in-out;
+}
+
+.tab_container .tab-content h3{
+  text-align:center;
+}
+
+.tab_container [id^="tab"]:checked + label{
+  background:#fff;
+  border-bottom: 2px solid #2196F3;
+}
+
+.tab_container [id^="tab"]:checked + label .fa{
+  color:#09C;
+}
+
+.tab_container label .fa{font-size:1.3em;margin:0 0.4em 0 0;display:inline-block;width:1.28571429em;height:auto;float:none;margin-left:-15px}
+}
+/*Media query*/
+@media only screen and (max-width:900px){
+  label span{
+    display:none;
+  }
+
+  .tab_container{
+    width:98%;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale{
+  0%{transform:scale(0.9);opacity:0}
+  100%{transform:scale(1);opacity:1}
+}
+
+.clearfix:before,.clearfix:after{
+  content:" ";
+  display:table;
 }
