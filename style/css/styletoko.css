@@ -316,6 +316,10 @@ span a:hover{
   width: 93%;
 }
 
+.center{
+  text-align: center;
+}
+
 /* Produk Content */
 
 .product-content{
@@ -351,4 +355,10 @@ span a:hover{
 
 .price{
   color: #2196F3;
+}
+
+/* Penomoran Halaman */
+.navigation-page{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
