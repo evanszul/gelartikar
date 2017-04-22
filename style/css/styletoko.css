@@ -362,3 +362,31 @@ span a:hover{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* kotak gambar detail-product*/
+.box-preview{
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.img-product-preview img{
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.img-product{
+  margin: 5px;
+}
+
+.img-product img{
+  width: 100%;
+}
+
+/* Sidebar product */
+.sidebar-product{
+  padding-left: 5px;
+  padding-right: 5px; 
+  border-left: 1px dashed #BDBDBD;
+  height: 100%;
+}
