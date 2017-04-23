@@ -110,7 +110,12 @@ a{
 
 /* Featured Image */
 .imgfeatured{
-  padding: 5px;
+  margin-bottom: -10px;
+  padding: 0px;
+}
+
+.img-clear{
+  clear: both;
 }
 
 /*mini navbar */
