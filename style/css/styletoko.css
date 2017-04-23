@@ -387,6 +387,7 @@ span a:hover{
 .sidebar-product{
   padding-left: 5px;
   padding-right: 5px;
+  font-size: 12px;
   border-left: 1px dashed #BDBDBD;
   height: 100%;
 }
