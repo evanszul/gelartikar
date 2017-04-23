@@ -270,10 +270,21 @@ span a:hover{
   color: white;
 }
 
-.panel-footer-body li{
-  list-style: none;
+.footer-link{
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  width: 91%;
+  border-bottom: 1px solid #1976D2;
 }
 
+.footer-link:hover{
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  width: 91%;
+  border-bottom: 1px solid white;
+}
 .footer-paling-bawah{
     border-top: 3px solid #333;
     background-color: #212121;
