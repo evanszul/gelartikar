@@ -12,6 +12,10 @@ a{
   text-decoration: none;
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* Bagian Kerangka */
 .container {
     margin: auto;
@@ -210,43 +214,6 @@ h3 span{
   margin-bottom: -10px;
   background-color: white;
 }
-
-.lantai-gambar {
-  -webkit-animation-name: rotate;
-  -moz-animation-name: rotate;
-  -ms-animation-name: rotate;
-  animation-name: rotate;}
-
-.lantai-gambar,
-.lantai-gambar:before,
-.lantai-gambar:after {
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -ms-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
-  -ms-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;}
-
-
-.lantai-gambar:before {
-  background: rgba(200, 250, 100, 0);
-  -webkit-animation-name: ring;
-  -moz-animation-name: ring;
-  -ms-animation-name: ring;
-  animation-name: ring;}
-
-.lantai-gambar:after {
-  background: rgba(250, 0, 200, 0);
-  -webkit-animation-name: ring2;
-  -moz-animation-name: ring2;
-  -ms-animation-name: ring2;
-  animation-name: ring2;}
 
 /* card */
 .card{
