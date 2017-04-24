@@ -209,6 +209,14 @@ h3 span{
   width: 100%;
   margin-bottom: -10px;
   background-color: white;
+  -webkit-animation-name: fadein;
+}
+
+@-webkit-keyframes fadein{
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  25% {opacity: 1;}
+  100%{opacity: 1;}
 }
 
 /* card */
