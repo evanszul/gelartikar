@@ -112,6 +112,17 @@ a{
   border-bottom: 2px solid #2196F3;
 }
 
+/* logo image */
+.logo_set{
+	padding-right:5px;
+	width:90%;
+}
+
+.logo_set_footer{
+	padding-top: 80px;
+	width:90%;
+}
+
 /* Featured Image */
 .imgfeatured{
   margin-bottom: -10px;
