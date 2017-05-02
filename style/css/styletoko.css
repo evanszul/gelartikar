@@ -150,6 +150,186 @@ a{
 
 }
 
+/* Mega Menu */
+.bg-menu{
+  background-color: #1976D2;
+  border-bottom: 3px solid #2196F3;
+}
+.mega-menu, .mega-menu >ul {
+  position: relative;
+  margin-top:0.5px;
+  background-color: #1976D2;
+  height: 50px;
+}
+.mega-menu >ul >li {
+  display: inline-block;
+  padding:15.5px 0;
+  overflow: hidden;
+}
+.mega-menu >ul >li >a {
+padding:17px;
+font-weight: bold;
+color: white;
+text-decoration: none;
+}
+
+.mega-menu >ul >li >a:hover {
+padding:17px;
+font-weight: bold;
+color:white;
+text-decoration: none;
+}
+.mega-menu >ul >li:hover {
+  background-color: #333;
+  color: #1976D2;
+  -webkit-transition:ease 0.3s;
+}
+.mega-menu .menu-detail {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+
+.mega-menu >ul >li:hover >div.menu-detail {
+  opacity: 1;
+  height: 800px;
+  width:100%;
+  visibility: visible;
+  top:50px;
+  right:0;
+  left: 0;
+  z-index: 99;
+  background-color: #1976D2;
+  color:#fff;
+  -webkit-transition:height 1s;
+  -moz-transition:height 1s;
+  transition:height 1s;
+  border-top:3px solid #3399dd;
+  overflow: hidden;
+}
+
+/* Sub mega menu */
+.menu-detail {
+  padding-left:20px;
+  padding-right:20px;
+}
+
+
+dl {
+  padding:10px;
+}
+
+dl dt{
+  border: 1px solid white;
+  margin: 0px;
+}
+
+dl dt a{
+  display: block;
+}
+
+dl dd{
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -o-transition: height 1s ease;
+}
+
+dl dd:not(:target){
+  height: 0;
+}
+
+dl dd:target {
+  height: 9.5em;
+}
+
+dl a.ie:hover dd, dl a.ie:focus dd{
+  height: auto;
+
+}
+/*--------Accordion-------*/
+.acc-kontainer {
+  width: 90%;
+  margin: auto;
+}
+
+.acc-kontainer .acc-body {
+  color: white;
+  overflow: hidden;
+  width: 98%;
+  height: 0;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0);;
+  background-color: rgba(255, 255, 255, 0.2);
+  line-height: 28px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: 0.0s;
+  position: relative;
+}
+
+
+.acc-kontainer input:checked~.acc-body a {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  width: 91%;
+  color: white;
+  border-bottom: 1px solid #1976D2;
+}
+
+.acc-kontainer input:checked~.acc-body a:hover {
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  width: 91%;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+
+.acc-kontainer label {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.acc-kontainer input{
+  display: none;
+}
+
+.acc-kontainer label:before {
+  font-weight: bolder;
+  float: right;
+}
+
+.acc-kontainer input:checked+label {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.acc-kontainer input:checked+label:before {
+  transition: 0.5s;
+}
+
+.acc-kontainer input:checked~.acc-body {
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  transition: 0.5s;
+  height: 100%;
+}
+
 /* Input Group */
 .input-group{
   margin-top: 15px;
