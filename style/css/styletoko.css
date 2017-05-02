@@ -193,7 +193,7 @@ text-decoration: none;
 
 .mega-menu >ul >li:hover >div.menu-detail {
   opacity: 1;
-  height: 800px;
+  height: 650px;
   width:100%;
   visibility: visible;
   top:50px;
@@ -215,41 +215,6 @@ text-decoration: none;
   padding-right:20px;
 }
 
-
-dl {
-  padding:10px;
-}
-
-dl dt{
-  border: 1px solid white;
-  margin: 0px;
-}
-
-dl dt a{
-  display: block;
-}
-
-dl dd{
-  width: 100%;
-  margin: 0px;
-  overflow: hidden;
-  -webkit-transition: height 1s ease;
-  -moz-transition: height 1s ease;
-  -o-transition: height 1s ease;
-}
-
-dl dd:not(:target){
-  height: 0;
-}
-
-dl dd:target {
-  height: 9.5em;
-}
-
-dl a.ie:hover dd, dl a.ie:focus dd{
-  height: auto;
-
-}
 /*--------Accordion-------*/
 .acc-kontainer {
   width: 90%;
