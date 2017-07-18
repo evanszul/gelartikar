@@ -18,7 +18,7 @@ a {
   margin: 0 auto;
   margin-top: 80px;
   background-color: white;
-  box-shadow: 2px 2px 8px 0px #2196F3;
+  box-shadow: 2px 2px 8px 0px #dbdbdb;
   border-radius: 5px;
   padding: 40px;
 }
@@ -41,7 +41,7 @@ a {
   width: 92%;
   padding: 13px 10px;
   margin: 5px 0px;
-  background-color: #dbdbdb;
+  background-color: #fafafa;
   border: 3px solid #dbdbdb;
   color: #757575;
   transition: all 0.7s;
