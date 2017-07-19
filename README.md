@@ -15,15 +15,23 @@ Buka phpmyadmin di browser dan buat db dengan nama gelartikar, lalu upload file 
 + Pengaturan Alamat
 + Pengaturan Akun
 + Checkout
-+ Pembelian
++ Konfirmasi Checkout (untuk masukkan alamat dan pemilihan metode pembayaran)
++ Daftar Pembelian
 
 # Bagian admin
 Untuk bagian admin, semua file seperti css, html, php disimpan pada folder /admin.
 + Login
 + Beranda
-+ Barang
-+ Kategori Barang
-+ Penjualan
-+ Daftar Pengguna
-+ Transfer
++ Daftar Barang (tambah fitur hapus barang)
++ Tambah Barang
++ Edit Barang
++ Daftar Kategori Barang (tambah fitur kategori barang)
++ Tambah Kategori Barang
++ Edit Kategori Barang
++ Daftar Penjualan (tambah fitur batalkan(hapus) penjualan)
++ Detail Pemesanan
++ Daftar Pengguna (tambah fitur hapus pengguna)
++ Tambah Pengguna
++ Edit Pengguna
++ Transfer (tambah fitur konfirmasi pembayaran)
 + Pengaturan Akun
