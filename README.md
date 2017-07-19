@@ -6,10 +6,23 @@ Buka phpmyadmin di browser dan buat db dengan nama gelartikar, lalu upload file 
 # Halaman pengguna
 + Login
 + Daftar
-+ Beranda <br>
-+ Produk <br>
-+ Profil <br>
-+ Checkout <br>
-+ Konfirmasi <br>
-+ Pembelian <br>
++ Lupa Password
++ Beranda
++ Produk
++ Kategori Produk
++ Pencarian Produk
++ Profil
++ Pengaturan Alamat
++ Pengaturan Akun
++ Checkout
++ Pembelian
 
+# Halaman admin
++ Login
++ Beranda
++ Barang
++ Kategori Barang
++ Penjualan
++ Daftar Pengguna
++ Transfer
++ Pengaturan Akun
