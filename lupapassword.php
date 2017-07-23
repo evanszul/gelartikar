@@ -19,7 +19,7 @@
             <input class="its" type="submit" name="kirim" value="Kirim">
           </form>
 
-          <p><a href="./login.html">Login</a> | <a href="./daftar.html">Daftar</a>  </p>
+          <p><a href="./login.php">Login</a> | <a href="./daftar.php">Daftar</a>  </p>
 
       </div>
     </div>

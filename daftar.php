@@ -1,3 +1,4 @@
+<?php error_reporting(""); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,16 +16,17 @@
             <img src="./image/logo/logo_web.png" width="100%"/>
           </center>
           <p><b>Silakan masukkan data anda dengan baik dan benar. </b></p>
+          <p style="color:red"> <b> <?php echo $_GET['error']; ?> </b> </p>
           <form class="fl" action="./sistem/mendaftar.php" method="post">
-            <input class="itpw" type="text" name="nama" placeholder="Nama Lengkap"><br>
-            <input class="itpw" type="email" name="email" placeholder="Email"><br>
-            <input class="itpw" type="text" name="username" placeholder="Username"><br>
+            <input class="itpw" type="text" name="nama" value="<?php echo $_GET['nama']; ?>" placeholder="Nama Lengkap"><br>
+            <input class="itpw" type="email" name="email" value="<?php echo $_GET['email']; ?>" placeholder="Email"><br>
+            <input class="itpw" type="text" name="username" value="<?php echo $_GET['username']; ?>" placeholder="Username"><br>
             <input class="itpw" type="password" name="password" placeholder="Password"><br>
-            <input class="itpw" type="text" name="no_hp_user" placeholder="Nomor Handphone"><br>
+            <input class="itpw" type="text" name="no_hp_user" value="<?php echo $_GET['no_hp_user']; ?>" placeholder="Nomor Handphone"><br>
             <button class="its" type="submit" name="daftar"> <b> Daftar </b> </button>
           </form>
 
-          <p>Sudah punya akun? <a href="./login.html">Login di sini</a></p>
+          <p>Sudah punya akun? <a href="./login.php">Login di sini</a></p>
 
       </div>
     </div>
