@@ -17,7 +17,7 @@
           <p><b>Silakan masuk ke dalam akun kamu </b></p>
           <form class="fl" action="" method="post">
             Belum punya akun? <a href="./daftar.php">Daftar di sini</a>
-            <input class="itpw" type="text" name="username" placeholder="Username or Email"><br>
+            <input class="itpw" type="text" name="username" placeholder="Username"><br>
             <input class="itpw" type="password" name="password" placeholder="Password"><br>
             <input class="its" type="submit" name="login" value="LOGIN">
           </form>
