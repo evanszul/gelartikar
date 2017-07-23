@@ -4,9 +4,9 @@ Gunakan aplikasi XAMPP dan buat folder gelar tikar di folder c:/xampp/htdocs/gel
 Buka phpmyadmin di browser dan buat db dengan nama gelartikar, lalu upload file database yang ada di folder db.<br>
 
 # Bagian pengguna
-+ Login
-+ Daftar
-+ Lupa Password
++ Login <HTML CSS Done>
++ Daftar <HTML CSS Done>
++ Lupa Password <HTML CSS Done>
 + Beranda
 + Produk
 + Kategori Produk
