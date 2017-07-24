@@ -6,11 +6,14 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 if($username == NULL && $password == NULL){
-  $error = "Username dan Password belum diisi!";
+  // Username dan Password belum diisi!
+  $error = 4;
 } else if($username == NULL){
-  $error = "Username masih kosong!";
+  // Username masih kosong!
+  $error = 5;
 } else if($password == NULL){
-  $error = "Password masih kosong!";
+  // Password masih kosong!
+  $error = 6;
 }
 
 if($username == NULL OR $password == NULL){
@@ -26,11 +29,11 @@ if($username == NULL OR $password == NULL){
       $_SESSION['username'] = $user['username'];
       header("location:http://localhost/gelartikar/beranda_user.php");
     } else {
-      $error2 = "Password yang tidak cocok";
+      //Password yang tidak cocok
       header("location:http://localhost/gelartikar/login.php?error=2");
     }
   } else {
-    $error3 = "Username yang tidak ditemukan";
+    // Username yang tidak ditemukan
     header("location:http://localhost/gelartikar/login.php?error=3");
   }
 }

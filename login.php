@@ -15,6 +15,22 @@
             <img src="./image/logo/logo_web.png" width="100%"/>
           </center>
           <p><b>Silakan masuk ke dalam akun kamu </b></p>
+          <p style="color:red"><b>
+          <?php
+            $error = $_GET['error'];
+            if($error == 4){
+              echo "Username dan Password belum diisi!";
+            } else if($error == 5){
+              echo "Username masih kosong!";
+            } else if($error == 6){
+              echo "Password masih kosong!";
+            } else if($error == 2){
+              echo "Password yang tidak cocok!";
+            } else if($error == 3){
+              echo "Username yang tidak ditemukan!";
+            }
+          ?>
+          </b></p>
           <form class="fl" action="./sistem/login.php" method="post">
             Belum punya akun? <a href="./daftar.php">Daftar di sini</a>
             <input class="itpw" type="text" name="username" placeholder="Username"><br>
