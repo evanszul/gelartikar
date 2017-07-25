@@ -25,7 +25,7 @@ include 'sistem/cek_login.php';
     <div class="container">
       <div class="row">
         <div class="col2">
-          <img class="logo_set" src="./image/logo/logo_web.jpg"/>
+          <a href="http://localhost/gelartikar"><img class="logo_set" src="./image/logo/logo_web.jpg"/></a>
         </div>
         <div class="col6">
           <div class="input-group">
