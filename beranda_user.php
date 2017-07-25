@@ -352,5 +352,87 @@ include 'sistem/cek_login.php';
   </div>
 <!-- Akhir menu -->
 
-</body>
+<!-- Awal konten -->
+<!-- Content -->
+<div class="container bg-white">
+  <div class="col8">
+    Kanan
+  </div>
+  <div class="col3">
+        kiri
+  </div>
+</div>
+<!-- Akhir dari Content -->
+<!-- Akhir konten -->
+
+<!-- Awal footer -->
+       <div class="footer">
+          <div class="container">
+            <div class="row">
+           <div class="col3">
+              <div class="panel-footer">
+                    <img class="logo_set_footer" src="./image/logo/logo_web_white.png"/>
+              </div>
+           </div>
+           <div class="col3">
+             <div class="panel-footer">
+               <div class="panel-footer-header">
+                 Bantuan
+               </div>
+               <div class="panel-footer-body">
+
+                   <a href="#" class="footer-link">Pembayaran </a>
+                   <a href="#" class="footer-link">Pengiriman </a>
+                   <a href="#" class="footer-link">Status Pesanan </a>
+                   <a href="#" class="footer-link">Pengembalian Produk </a>
+                   <a href="#" class="footer-link">Cara Belanja </a>
+                   <a href="#" class="footer-link">Hubungi Kami </a>
+
+               </div>
+             </div>
+           </div>
+           <div class="col3">
+              <div class="panel-footer-header">
+                Info GelarTikar.com
+              </div>
+              <div class="panel-footer-body">
+
+                  <a href="#" class="footer-link">Tentang GelarTikar.com </a>
+                  <a href="#" class="footer-link">Blog </a>
+                  <a href="#" class="footer-link">Siaran Pers </a>
+                  <a href="#" class="footer-link">Kabar Terbaru </a>
+                  <a href="#" class="footer-link">Daftar Brand </a>
+                  <a href="#" class="footer-link">Ulasan Puas </a>
+                  <a href="#" class="footer-link">Blog Competition </a>
+
+              </div>
+           </div>
+           <div class="col3">
+              <div class="panel-footer-header">
+                Customer Care
+              </div>
+              <div class="panel-footer-body">
+
+                  <span class="footer-link">Buka 24 jam setiap hari </span>
+                  <span class="footer-link">082220326193 </span>
+                  <a class="footer-link" href="mailto:customer.care@gelartikar.com"> customer.care@gelartikar.com </a>
+                  </ul>
+              </div>
+           </div>
+         </div>
+          </div>
+        </div>
+      <div class="footer-paling-bawah">
+          <div class="container">
+            <div class="row">
+              <div class="col8">
+                &copy 2017 PT GelarTikar.com
+              </div>
+              <div class="col4 pull-right">
+                <img src="./image/logo_pembayaran_pengiriman.png" height="30px"/>
+              </div>
+            </div>
+          </div>
+       </div>
+   </body>
 </html>
