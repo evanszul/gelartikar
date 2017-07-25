@@ -353,10 +353,16 @@ include 'sistem/cek_login.php';
 <!-- Akhir menu -->
 
 <!-- Awal konten -->
-<!-- Content -->
 <div class="container bg-white">
   <div class="col8">
-    Kanan
+    <div class="kotak">
+      <div class="kotak-header">
+        <h3> Beranda Pengguna </h3>
+      </div>
+      <div class="kotak-body">
+        hallo
+      </div>
+    </div>
   </div>
   <div class="col3">
         kiri
