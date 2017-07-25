@@ -21,7 +21,7 @@ if($username == NULL OR $password == NULL){
 } else {
 
   $query = mysqli_query($koneksi, "SELECT * FROM tbl_user where username='$username'");
-  $cek_user = mysql_num_rows($query);
+  $cek_user = mysqli_num_rows($query);
   $user = mysqli_fetch_assoc($query);
   if($cek_user>0){
     if( password_verify($_POST['password'], $user['pwd_user']) ) {

@@ -26,9 +26,9 @@
             } else if($error == 6){
               echo "Password masih kosong!";
             } else if($error == 2){
-              echo "Password yang tidak cocok!";
+              echo "Password tidak cocok!";
             } else if($error == 3){
-              echo "Username yang tidak ditemukan!";
+              echo "Username tidak ditemukan!";
             }
           ?>
           </b></p>
