@@ -517,7 +517,7 @@ include 'sistem/cek_login.php';
         Terbayarkan
       </div>
       <div class="col2">
-        <a class="button2 button-transaksi" href="#">Lihat Detail</a>
+        <a class="button2 button-transaksi pull-right" href="#">Lihat Detail</a>
       </div>
     </div>
     <div class="box-transaksi-body">
