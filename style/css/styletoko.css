@@ -667,3 +667,12 @@ span a:hover{
   content:" ";
   display:table;
 }
+
+/* CSS kotak */
+.kotak{
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.kotak-header{
+  margin-left: 10px;
+}
