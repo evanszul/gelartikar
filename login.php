@@ -1,3 +1,4 @@
+<?php error_reporting(""); ?>
 <!DOCTYPE html>
 <html>
   <head>
