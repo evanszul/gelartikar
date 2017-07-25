@@ -75,7 +75,7 @@
         <b> Catriona by Cocolyn</b><br>
         <span> Catriona by Cocolyn Checkered pigeon top - Hitam </span><br>
         <span class="price"> Rp 124.900 </span><br><br>
-        <a href="#" class="button"> BELI SEKARANG </a>
+        <a href="cart.php" class="button"> BELI SEKARANG </a>
       </div>
     </div>
     <div class="col3">
