@@ -1,8 +1,8 @@
 <?php
-
-include 'sistem/cek_login.php';
-
+require_once("./sistem/cek_sesi.php");
 ?>
+
+<!DOCTYPE html>
 <html>
 <head>
   <title>Situs Mall Fashion Online Terpecaya - GelarTikar.com</title>
@@ -37,8 +37,8 @@ include 'sistem/cek_login.php';
         </div>
         <div class="col4">
           <div class="input-group pull-right">
-            <a class="button" href="profile_user.php">Hallo, <?php echo $data_user['nama_user']; ?></a>
-            <a class="button2" href="sistem/logout.php">Keluar</a>
+            <a class="button" href="login.php">Masuk</a>
+            <a class="button2" href="daftar.php">Daftar</a>
           </div>
         </div>
       </div>
@@ -345,205 +345,105 @@ include 'sistem/cek_login.php';
               </div>
             </div>
           </li>
-          <li><a href="transaksi_user.php">Transaksi </a></li>
-          <li><a href="pengaturan_akun_user.php">Pengaturan</a></li>
+          <li
         </ul>
       </div>
     </div>
   </div>
 <!-- Akhir menu -->
 
-<!-- Awal konten -->
-<div class="container">
-  <div class="row">
-    <div class="col6">
-      <img class="imgfeatured" src="./image/figure/featuredimageutama1.jpg" width="100%"/>
-      <img class="imgfeatured pull-left" src="./image/featuredimagemini3.jpg" width="100%" />
-    </div>
-    <div class="col6">
-      <img class="lantai-gambar" src="./image/figure/featuredimage1.jpg">
-    </div>
-  </div>
-</div>
+<!-- Content -->
+      <div class="container">
+        <div class="row">
+          <div class="col6">
+            <img class="imgfeatured" src="./image/figure/featuredimageutama1.jpg" width="100%"/>
+            <img class="imgfeatured" src="./image/featuredimagemini.jpg" width="50%" />
+            <img class="imgfeatured pull-right" src="./image/faturedimageminidefault.png" width="50%" />
+            <img class="imgfeatured pull-left" src="./image/featuredimagemini3.jpg" width="50%" />
+            <img class="imgfeatured pull-right" src="./image/featuredimagemini.jpg" width="50%" />
+          </div>
+          <div class="col6">
+            <img class="lantai-gambar" src="./image/figure/featuredimage1.jpg">
+          </div>
+        </div>
+      </div>
+       <div class="container">
+           <div class="row">
+               <div class="col12">
+                 <div class="lantai">
+                   <div class="lantai-header">
+                     <h3> <span>LANTAI 1</span> FASHION WANITA </h3>
+                   </div>
+                   <div class="lantai-body">
+                      <div class="col2">
+                        <img class="lantai-gambar" src="./image/logo/rb.png">
+                        <img class="lantai-gambar" src="./image/logo/hm.png">
+                        <img class="lantai-gambar" src="./image/logo/zara.png">
+                        <img class="lantai-gambar" src="./image/logo/wacoal.png">
+                        <img class="lantai-gambar" src="./image/logo/hollister.png">
+                      </div>
+                      <div class="col5" border="1px">
+                        <img class="lantai-gambar" src="./image/figure/featuredimage1.jpg">
+                      </div>
+                      <div class="col5">
+                        <img class="lantai-gambar" src="./image/figure/featuredimage2.jpg">
+                      </div>
+                   </div>
+                 </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col12">
+                 <div class="lantai">
+                   <div class="lantai-header">
+                     <h3> <span>LANTAI 2</span> FASHION PRIA </h3>
+                   </div>
+                   <div class="lantai-body">
+                     <div class="col2">
+                       <img class="lantai-gambar" src="./image/logo/adidas.png">
+                       <img class="lantai-gambar" src="./image/logo/fila1.png">
+                       <img class="lantai-gambar" src="./image/logo/levis.png">
+                       <img class="lantai-gambar" src="./image/logo/lois.png">
+                       <img class="lantai-gambar" src="./image/logo/nike.png">
+                     </div>
+                     <div class="col5">
+                       <img class="lantai-gambar" src="./image/figure/featuredimage3.jpg">
+                     </div>
+                    <div class="col5">
+                       <img class="lantai-gambar" src="./image/figure/featuredimage4.jpg">
+                     </div>
+                   </div>
+                 </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col12">
+                 <div class="lantai">
+                   <div class="lantai-header">
+                     <h3> <span>LANTAI 3</span> TAS & JAM TANGAN </h3>
+                   </div>
+                   <div class="lantai-body">
+                     <div class="col2">
+                       <img class="lantai-gambar" src="./image/logo/lv.png">
+                       <img class="lantai-gambar" src="./image/logo/michaelkors.png">
+                       <img class="lantai-gambar" src="./image/logo/chanel.png">
+                       <img class="lantai-gambar" src="./image/logo/gucci.png">
+                       <img class="lantai-gambar" src="./image/logo/ks.png">
+                     </div>
+                     <div class="col5">
+                       <img class="lantai-gambar" src="./image/figure/featuredimage5.jpg">
+                     </div>
+                     <div class="col5">
+                       <img class="lantai-gambar" src="./image/figure/featuredimage6.jpg">
+                     </div>
+                   </div>
+                 </div>
+               </div>
+           </div>
+       </div>
 
-<div class="container bg-white">
-  <div class="row">
-      <div class="box-kategori">
-        <span class="judul-kategori"> Produk Terbaru </span> <span class="jumlah-produk">(35 ditemukan)
-      </div>
-  </div>
-  <div class="row">
-    <div class="col3">
-      <div class="card">
-        <div class="card-header">
-          <span> Brand </span>
-        </div>
-        <div class="card-body">
-          <a href="#"><div class="list-brand">kim</div></a>
-          <a href="#"><div class="list-brand">gatsuone</div></a>
-          <a href="#"><div class="list-brand">jessica tan</div></a>
-          <a href="#"><div class="list-brand">innara</div></a>
-          <a href="#"><div class="list-brand">mint</div></a>
-          <a href="#"><div class="list-brand">mosarstwo</div></a>
-          <a href="#"><div class="list-brand">sophistix</div></a>
-          <a href="#"><div class="list-brand">accent</div></a>
-          <a href="#"><div class="list-brand">hope</div></a>
-          <a href="#"><div class="list-brand">gee eight</div></a>
-          <a href="#"><div class="list-brand">dei reich</div></a>
-          <a href="#"><div class="list-brand">gaff</div></a>
-          <a href="#"><div class="list-brand">veyl</div></a>
-          <a href="#"><div class="list-brand">carvil</div></a>
-          <a href="#"><div class="list-brand">purplejadebutik</div></a>
-          <a href="#"><div class="list-brand">novo</div></a>
-          <a href="#"><div class="list-brand">bandidas</div></a>
-          <a href="#"><div class="list-brand">boontie</div></a>
-          <a href="#"><div class="list-brand">sahara</div></a>
-        </div>
-      </div>
-    </div>
-    <div class="col9">
-      <div class="col4">
-          <div class="product-content">
-            <a href="#">
-            <div class="product-image">
-              <img src="./image/product/catriona-by-cocolyn-checkered-pigeon-top-black_1830488_1_79895.jpg" />
-            </div>
-            <div class="product-info">
-              <b> Catriona by Cocolyn </b><br>
-              <span> Catriona by Cocolyn Checkered pigeon top - Hitam </span><br>
-              <span class="price"> Rp 49.000</span>
-            </div>
-            </a>
-          </div>
-      </div>
-      <div class="col4">
-          <div class="product-content">
-            <a href="#">
-            <div class="product-image">
-              <img src="./image/product/blouse_geometric-atasan-casual----pink_1370790_2_90799.jpeg" />
-            </div>
-            <div class="product-info">
-              <b> Geometric </b><br>
-              <span> Geometric Atasan Casual - Pink </span><br>
-              <span class="price"> Rp 49.000</span>
-            </div>
-            </a>
-          </div>
-      </div>
-      <div class="col4">
-          <div class="product-content">
-            <a href="#">
-            <div class="product-image">
-              <img src="./image/product/blouse_geometric-atasan-wanita-strip-print---pink_1370551_2_93945.jpeg" />
-            </div>
-            <div class="product-info">
-              <b> Geometric </b><br>
-              <span> Geometric Atasan Wanita Strip Print - Pink </span><br>
-              <span class="price"> Rp 49.000</span>
-            </div>
-            </a>
-          </div>
-      </div>
-      <div class="col4">
-          <div class="product-content">
-            <a href="#">
-            <div class="product-image">
-              <img src="./image/product/kemeja_connexion-kemeja-lengan-panjang-wanita-white.JPG" />
-            </div>
-            <div class="product-info">
-              <b> Connexion </b><br>
-              <span> Connexion Basic LS Shirt - Putih </span><br>
-              <span class="price"> Rp 161.910</span>
-            </div>
-            </a>
-          </div>
-      </div>
-      <div class="col4">
-          <div class="product-content">
-            <a href="#">
-            <div class="product-image">
-              <img src="./image/product/jaket--coat_nike-as-tech-fleece-cape---ungu_1645997_3_09887.jpeg" />
-            </div>
-            <div class="product-info">
-              <b> Nike </b><br>
-              <span> Nike As Tech Fleece Cape - Ungu </span><br>
-              <span class="price"> Rp 1.066.667</span>
-            </div>
-            </a>
-          </div>
-      </div>
-      <div class="col4">
-          <div class="product-content">
-            <a href="#">
-            <div class="product-image">
-              <img src="./image/product/blouse_jo--nic-marina.jpeg" />
-            </div>
-            <div class="product-info">
-              <b> Jo & Nic </b><br>
-              <span> Jo & Nic Marina Ribbon Longsleeve Top – Abu-abu </span><br>
-              <span class="price"> Rp 74.500</span>
-            </div>
-            </a>
-          </div>
-      </div>
-      <div class="col4">
-          <div class="product-content">
-            <a href="#">
-            <div class="product-image">
-              <img src="./image/product/blouse_my-straw-blouse-peplum-danisa-denim---biru-muda_3439745_1_34682.jpeg" />
-            </div>
-            <div class="product-info">
-              <b> My Straw </b><br>
-              <span> My Straw Blouse Peplum Danisa Denim - Biru Muda </span><br>
-              <span class="price"> Rp 51.900</span>
-            </div>
-            </a>
-          </div>
-      </div>
-      <div class="col4">
-          <div class="product-content">
-            <a href="#">
-            <div class="product-image">
-              <img src="./image/product/celana-panjang_jo--nic-barbara-celana-panjang-katun-stretch---navy_2566362_1_66093.jpeg" />
-            </div>
-            <div class="product-info">
-              <b> Jo & Nic </b><br>
-              <span> Jo & Nic Barbara Celana Panjang Katun Stretch - Navy </span><br>
-              <span class="price"> Rp 71.500</span>
-            </div>
-            </a>
-          </div>
-      </div>
-      <div class="col4">
-          <div class="product-content">
-            <a href="#">
-            <div class="product-image">
-              <img src="./image/product/mini-dress_billy-tjong-anna-mini-dress---merah_1645729_2_67373.jpeg" />
-            </div>
-            <div class="product-info">
-              <b> BILLY TJONG </b><br>
-              <span> Billy Tjong Anna Mini Dress - Merah </span><br>
-              <span class="price"> Rp 383.600</span>
-            </div>
-            </a>
-          </div>
-      </div>
-      <div class="col12">
-        <div class="navigation-page">
-          <div class="col6 center">
-            <a class="button" href="#">Previous</a>
-          </div>
-          <div class="col6 center">
-            <a class="button" href="#">Next</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Akhir konten -->
+<!-- Akhir dari Content -->
 
-<!-- Awal footer -->
        <div class="footer">
           <div class="container">
             <div class="row">

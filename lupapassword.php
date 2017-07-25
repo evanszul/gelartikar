@@ -1,3 +1,7 @@
+<?php
+error_reporting("");
+require_once("./sistem/cek_sesi.php");
+?>
 <!DOCTYPE html>
 <html>
   <head>
