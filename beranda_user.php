@@ -345,9 +345,7 @@ include 'sistem/cek_login.php';
               </div>
             </div>
           </li>
-          <li><a href="#">Transaksi </a></li>
-          <li><a href="#">Konfirmasi </a></li>
-
+          <li><a href="transaksi_user.php">Transaksi </a></li>
         </ul>
       </div>
     </div>
