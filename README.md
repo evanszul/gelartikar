@@ -12,8 +12,7 @@ Buka phpmyadmin di browser dan buat db dengan nama gelartikar, lalu upload file 
 + Kategori Produk -> ?
 + Pencarian Produk -> ?
 + Profil -> profile_user.php
-+ Pengaturan Alamat -> ?
-+ Pengaturan Akun -> ?
++ Pengaturan Akun -> pengaturan_akun_user.php (untuk mengelola semua informasi akun pengguna)
 + Checkout/Chart -> chart.php (untuk masukkan alamat dan pemilihan metode pembayaran)
 + Transaksi -> transaksi_user.php (menampilkan daftar pembelian yang diguankan oleh user)
 
