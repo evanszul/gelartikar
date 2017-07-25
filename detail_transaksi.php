@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+include 'sistem/cek_login.php';
+
+?>
 <html>
 <head>
   <title>Situs Mall Fashion Online Terpecaya - GelarTikar.com</title>
@@ -33,8 +37,8 @@
         </div>
         <div class="col4">
           <div class="input-group pull-right">
-            <a class="button" href="login.php">Masuk</a>
-            <a class="button2" href="daftar.php">Daftar</a>
+            <a class="button" href="profile_user.php">Hallo, <?php echo $data_user['nama_user']; ?></a>
+            <a class="button2" href="sistem/logout.php">Keluar</a>
           </div>
         </div>
       </div>
@@ -45,7 +49,7 @@
     <div class="container">
       <div class="mega-menu">
         <ul>
-          <li><a href="#">Beranda</a></li>
+          <li><a href="http://localhost/gelartikar">Beranda</a></li>
           <li><a href="#">Fashion Pria</a>
             <div class="menu-detail">
               <div class="row">
@@ -341,105 +345,62 @@
               </div>
             </div>
           </li>
-          <li
+          <li><a href="transaksi_user.php">Transaksi </a></li>
+          <li><a href="pengaturan_akun_user.php">Pengaturan</a></li>
         </ul>
       </div>
     </div>
   </div>
 <!-- Akhir menu -->
 
-<!-- Content -->
-      <div class="container">
-        <div class="row">
-          <div class="col6">
-            <img class="imgfeatured" src="./image/figure/featuredimageutama1.jpg" width="100%"/>
-            <img class="imgfeatured" src="./image/featuredimagemini.jpg" width="50%" />
-            <img class="imgfeatured pull-right" src="./image/faturedimageminidefault.png" width="50%" />
-            <img class="imgfeatured pull-left" src="./image/featuredimagemini3.jpg" width="50%" />
-            <img class="imgfeatured pull-right" src="./image/featuredimagemini.jpg" width="50%" />
+
+<!-- Awal konten -->
+<div class="container bg-white">
+  <div class="row">
+      <div class="box-kategori">
+        <span class="judul-kategori"> Detail Transaksi</span>
+      </div>
+      <div class="breadcrumb">
+        <span> <a href=""> Beranda </a> </span> /
+        <span class="breadcrumb-active"> <a href="#"> Detail Transaksi </a></span>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col3">
+        <div class="card">
+          <div class="card-header">
+            <span> Brand </span>
           </div>
-          <div class="col6">
-            <img class="lantai-gambar" src="./image/figure/featuredimage1.jpg">
+          <div class="card-body">
+            <a href="#"><div class="list-brand">kim</div></a>
+            <a href="#"><div class="list-brand">gatsuone</div></a>
+            <a href="#"><div class="list-brand">jessica tan</div></a>
+            <a href="#"><div class="list-brand">innara</div></a>
+            <a href="#"><div class="list-brand">mint</div></a>
+            <a href="#"><div class="list-brand">mosarstwo</div></a>
+            <a href="#"><div class="list-brand">sophistix</div></a>
+            <a href="#"><div class="list-brand">accent</div></a>
+            <a href="#"><div class="list-brand">hope</div></a>
+            <a href="#"><div class="list-brand">gee eight</div></a>
+            <a href="#"><div class="list-brand">dei reich</div></a>
+            <a href="#"><div class="list-brand">gaff</div></a>
+            <a href="#"><div class="list-brand">veyl</div></a>
+            <a href="#"><div class="list-brand">carvil</div></a>
+            <a href="#"><div class="list-brand">purplejadebutik</div></a>
+            <a href="#"><div class="list-brand">novo</div></a>
+            <a href="#"><div class="list-brand">bandidas</div></a>
+            <a href="#"><div class="list-brand">boontie</div></a>
+            <a href="#"><div class="list-brand">sahara</div></a>
           </div>
         </div>
       </div>
-       <div class="container">
-           <div class="row">
-               <div class="col12">
-                 <div class="lantai">
-                   <div class="lantai-header">
-                     <h3> <span>LANTAI 1</span> FASHION WANITA </h3>
-                   </div>
-                   <div class="lantai-body">
-                      <div class="col2">
-                        <img class="lantai-gambar" src="./image/logo/rb.png">
-                        <img class="lantai-gambar" src="./image/logo/hm.png">
-                        <img class="lantai-gambar" src="./image/logo/zara.png">
-                        <img class="lantai-gambar" src="./image/logo/wacoal.png">
-                        <img class="lantai-gambar" src="./image/logo/hollister.png">
-                      </div>
-                      <div class="col5" border="1px">
-                        <img class="lantai-gambar" src="./image/figure/featuredimage1.jpg">
-                      </div>
-                      <div class="col5">
-                        <img class="lantai-gambar" src="./image/figure/featuredimage2.jpg">
-                      </div>
-                   </div>
-                 </div>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col12">
-                 <div class="lantai">
-                   <div class="lantai-header">
-                     <h3> <span>LANTAI 2</span> FASHION PRIA </h3>
-                   </div>
-                   <div class="lantai-body">
-                     <div class="col2">
-                       <img class="lantai-gambar" src="./image/logo/adidas.png">
-                       <img class="lantai-gambar" src="./image/logo/fila1.png">
-                       <img class="lantai-gambar" src="./image/logo/levis.png">
-                       <img class="lantai-gambar" src="./image/logo/lois.png">
-                       <img class="lantai-gambar" src="./image/logo/nike.png">
-                     </div>
-                     <div class="col5">
-                       <img class="lantai-gambar" src="./image/figure/featuredimage3.jpg">
-                     </div>
-                    <div class="col5">
-                       <img class="lantai-gambar" src="./image/figure/featuredimage4.jpg">
-                     </div>
-                   </div>
-                 </div>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col12">
-                 <div class="lantai">
-                   <div class="lantai-header">
-                     <h3> <span>LANTAI 3</span> TAS & JAM TANGAN </h3>
-                   </div>
-                   <div class="lantai-body">
-                     <div class="col2">
-                       <img class="lantai-gambar" src="./image/logo/lv.png">
-                       <img class="lantai-gambar" src="./image/logo/michaelkors.png">
-                       <img class="lantai-gambar" src="./image/logo/chanel.png">
-                       <img class="lantai-gambar" src="./image/logo/gucci.png">
-                       <img class="lantai-gambar" src="./image/logo/ks.png">
-                     </div>
-                     <div class="col5">
-                       <img class="lantai-gambar" src="./image/figure/featuredimage5.jpg">
-                     </div>
-                     <div class="col5">
-                       <img class="lantai-gambar" src="./image/figure/featuredimage6.jpg">
-                     </div>
-                   </div>
-                 </div>
-               </div>
-           </div>
-       </div>
+    </div>
+</div>
 
-<!-- Akhir dari Content -->
+<!-- Akhir Konten -->
 
+
+<!-- Awal footer -->
        <div class="footer">
           <div class="container">
             <div class="row">

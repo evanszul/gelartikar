@@ -346,6 +346,7 @@ include 'sistem/cek_login.php';
             </div>
           </li>
           <li><a href="transaksi_user.php">Transaksi </a></li>
+          <li><a href="pengaturan_akun_user.php">Pengaturan</a></li>
         </ul>
       </div>
     </div>
@@ -409,7 +410,7 @@ include 'sistem/cek_login.php';
               Terbayarkan
             </div>
             <div class="col2">
-              <a class="button2 button-transaksi" href="#">Lihat Detail</a>
+              <a class="button2 button-transaksi" href="./detail_transaksi.php">Lihat Detail</a>
             </div>
           </div>
           <div class="box-transaksi-body">
