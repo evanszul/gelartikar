@@ -15,7 +15,7 @@ Buka phpmyadmin di browser dan buat db dengan nama gelartikar, lalu upload file 
 + Pengaturan Alamat -> ?
 + Pengaturan Akun -> ?
 + Checkout/Chart -> chart.php (untuk masukkan alamat dan pemilihan metode pembayaran)
-+ Daftar Pembelian -> ?
++ Transaksi -> transaksi_user.php (menampilkan daftar pembelian yang diguankan oleh user)
 
 # Bagian admin
 Untuk bagian admin, semua file seperti css, html, php disimpan pada folder <b> /admin </b>.
