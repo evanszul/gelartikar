@@ -14,7 +14,7 @@ Buka phpmyadmin di browser dan buat db dengan nama gelartikar, lalu upload file 
 + Profil
 + Pengaturan Alamat
 + Pengaturan Akun
-+ Checkout
++ Checkout/Chart
 + Konfirmasi Checkout (untuk masukkan alamat dan pemilihan metode pembayaran)
 + Daftar Pembelian
 
