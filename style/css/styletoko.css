@@ -11,6 +11,9 @@ a{
   color: #212121;
   text-decoration: none;
 }
+hr{
+  color: #dfdfdf;
+}
 
 .text-center{
     text-align: center;
@@ -671,6 +674,7 @@ span a:hover{
 /* CSS kotak transaksi*/
 .box-transaksi{
   margin-bottom: 15px;
+  font-size: 14px;
   margin-right: 10px;
   margin-left: 10px;
   width: 95%;
@@ -679,6 +683,7 @@ span a:hover{
 
 .box-transaksi-header{
   padding: 15px;
+  font-size: 14px;
   background-color: #f5f5f5;
   border-radius: 5px 5px 0px 0px;
   height: 60px;
@@ -687,6 +692,7 @@ span a:hover{
 .box-transaksi-body{
   padding: 15px;
   background-color: #fffff;
+  font-size: 14px;
   border: 2px solid #f5f5f5;
   border-radius: 0px 0px 5px 5px;
   height: 160px;
@@ -698,4 +704,27 @@ span a:hover{
 
 .transaksi-font{
   color: #757575;
+}
+
+/* CSS Detail Transaksi */
+.box-detail-transaksi{
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  width: 90%;
+  font-size: 14px;
+  height: 100%;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.box-detail-transaksi-body{
+  padding: 15px;
+  background-color: #fffff;
+  font-size: 14px;
+  border: 2px solid #f5f5f5;
+  border-radius: 0px 0px 5px 5px;
+  height: 100%;
+  width: 80%;
 }

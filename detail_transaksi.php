@@ -394,6 +394,42 @@ include 'sistem/cek_login.php';
           </div>
         </div>
       </div>
+      <div class="col9">
+        <div class="col8">
+        <div class="box-detail-transaksi">
+            <div class="col12">
+              <span class="transaksi-font"> <b>Daftar Pembelian</b></span>
+            </div>
+        </div>
+      </div>
+      <div class="col4">
+        <div class="box-detail-transaksi-body">
+          <div class="col12">
+            <span class="transaksi-font">Alamat Pengiriman</span>
+            <p class="box-alamat"><b>Evans Zulhendy</b><br>
+            Bengkong Jaya Blok C.10<br>
+            Bengkong, Batam<br>
+            Kepulauan Riau, 29457<br>
+            Telepon/Handphone: 082220326193</p>
+          </div>
+          <div class="col12">
+            <hr>
+            <span class="transaksi-font">Jasa Pengiriman</span><br>
+            JNE REGULER
+          </div>
+          <div class="col12">
+            <hr>
+            <span class="transaksi-font">Kode Resi</span><br>
+            819474230129487
+          </div>
+          <div class="col12">
+            <hr>
+            <span class="transaksi-font">Kode Resi</span><br>
+            819474230129487
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
 </div>
 
