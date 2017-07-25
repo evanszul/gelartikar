@@ -4,19 +4,18 @@ Gunakan aplikasi XAMPP dan buat folder gelar tikar di folder <b>c:/xampp/htdocs/
 Buka phpmyadmin di browser dan buat db dengan nama gelartikar, lalu upload file database yang ada di folder db.<br>
 
 # Bagian pengguna
-+ Login (HTML CSS Done)
-+ Daftar (HTML CSS Done)
-+ Lupa Password (HTML CSS Done)
-+ Beranda
-+ Produk
-+ Kategori Produk
-+ Pencarian Produk
-+ Profil
-+ Pengaturan Alamat
-+ Pengaturan Akun
-+ Checkout/Chart
-+ Konfirmasi Checkout (untuk masukkan alamat dan pemilihan metode pembayaran)
-+ Daftar Pembelian
++ Login -> login.php (HTML CSS Done)
++ Daftar -> daftar.php (HTML CSS Done)
++ Lupa Password -> lupapassword.php (HTML CSS Done)
++ Beranda -> beranda_user.php (OTW)
++ Produk -> produk.html
++ Kategori Produk -> ?
++ Pencarian Produk -> ?
++ Profil -> profile_user.php
++ Pengaturan Alamat -> ?
++ Pengaturan Akun -> ?
++ Checkout/Chart -> chart.php (untuk masukkan alamat dan pemilihan metode pembayaran)
++ Daftar Pembelian -> ?
 
 # Bagian admin
 Untuk bagian admin, semua file seperti css, html, php disimpan pada folder <b> /admin </b>.
