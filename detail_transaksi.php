@@ -400,6 +400,54 @@ include 'sistem/cek_login.php';
             <div class="col12">
               <span class="transaksi-font"> <b>Daftar Pembelian</b></span>
             </div>
+            <div class="col12 bg-white" style="padding:10px; width:96%">
+              <div class="col9">
+                <a href="#" style="font-size:12px;"> HDD 2nd Caddy / HDD Bracket 12.7mm untuk Notebook HDD 2nd Caddy / HDD Bracket 12.7mm untuk. . . </a><br>
+                <span class="transaksi-font" style="font-size:12px;">Jumlah: 1</span></br>
+                <span class="transaksi-font" style="font-size:12px;">Berat: 200gram</span>
+              </div>
+              <div class="col3">
+                <center>
+                Rp53.000
+                </center>
+              </div>
+            </div>
+              <div class="col12 bg-white" style="padding:10px; width:96%">
+              <div class="col9">
+                <a href="#" style="font-size:12px;"> HDD 2nd Caddy / HDD Bracket 12.7mm untuk Notebook HDD 2nd Caddy / HDD Bracket 12.7mm untuk. . . </a><br>
+                <span class="transaksi-font" style="font-size:12px;">Jumlah: 1</span></br>
+                <span class="transaksi-font" style="font-size:12px;">Berat: 200gram</span>
+              </div>
+              <div class="col3">
+                <center>
+                Rp53.000
+                </center>
+              </div>
+            </div>
+              <div class="col12 bg-white" style="padding:10px; width:96%">
+              <div class="col9">
+                <a href="#" style="font-size:12px;"> HDD 2nd Caddy / HDD Bracket 12.7mm untuk Notebook HDD 2nd Caddy / HDD Bracket 12.7mm untuk. . . </a><br>
+                <span class="transaksi-font" style="font-size:12px;">Jumlah: 1</span></br>
+                <span class="transaksi-font" style="font-size:12px;">Berat: 200gram</span>
+              </div>
+              <div class="col3">
+                <center>
+                Rp53.000
+                </center>
+              </div>
+            </div>
+              <div class="col12 bg-white" style="padding:10px; width:96%">
+              <div class="col9">
+                <a href="#" style="font-size:12px;"> HDD 2nd Caddy / HDD Bracket 12.7mm untuk Notebook HDD 2nd Caddy / HDD Bracket 12.7mm untuk. . . </a><br>
+                <span class="transaksi-font" style="font-size:12px;">Jumlah: 1</span></br>
+                <span class="transaksi-font" style="font-size:12px;">Berat: 200gram</span>
+              </div>
+              <div class="col3">
+                <center>
+                Rp53.000
+                </center>
+              </div>
+            </div>
         </div>
       </div>
       <div class="col4">
@@ -428,7 +476,6 @@ include 'sistem/cek_login.php';
             819474230129487
           </div>
         </div>
-      </div>
       </div>
     </div>
 </div>
