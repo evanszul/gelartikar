@@ -1,6 +1,7 @@
 <?php
 
 include 'sistem/cek_login.php';
+include 'sistem/koneksi.php';
 
 ?>
 <html>
@@ -353,100 +354,46 @@ include 'sistem/cek_login.php';
 <!-- Akhir menu -->
 
 <!-- Awal konten -->
-   
-   <div id="container">
+
+   <div class="container bg-white" style="padding:20px;">
+       <div class="col12">
+         <div class="title"><h2><center>Detail Keranjang Belanja</center></h2></div>
+          <table align="center" width="75%"  style="height:150px;border: 1px solid #2196F3;" cellspacing="0" cellpadding="3">
+            <tr style="background-color: #2196F3; color:white;">
+               <th>No.</th>
+               <th>Nama Barang</th>
+               <th>Jumlah</th>
+               <th>Harga Satuan</th>
+               <th>Sub Total</th>
+               <th>Action</th>
+             </tr>
+             <tr bgcolor="#f5f5f5" style="border: 1px solid #2196F3;">
+               <td align="center">1</td>
+               <td align="center">Connexion</td>
+               <td align="center">1</td>
+               <td align="right">Rp. 129000</td>
+               <td align="right">Rp. 129000</td>
+               <td align="center">
+                 <a class="button2" href="detail_keranjang.php">Tambah</a>
+                 <a class="button2" href="detail_keranjang.php">Kurang</a>
+                 <a class="button2" href="detail_keranjang.php" onclick="return confirm(\'Anda Yakin?\');">Batal</a><br>
+               </td>
+             </tr>
+             <tr>
+               <td colspan="6" bgcolor="#f5f5f5" align="center">Keranjang belanja masih kosong!</td>
+             </tr>
+           </table>
+       </div>
+       <div class="col12">
+          <b class="pull-right">Total : Rp. 129000</b></br>
+           <a href="index.php" class="button pull-right">Lanjutkan Belanja</a></br></br>
+           <a href="selesai.php" class="button pull-right">Lanjut ke Pembayaran</a>
+         </table>
+       </div>
+     </div>
+   </div>
 
 
-		
-
-        <div class="title"><h2><center>Detail Keranjang Belanja</center></h2></div>
-     			<table border="0" align="center" width="75%" cellspacing="0" cellpadding="3">
-				<tr style="background-color: #2196F3;">
-					<th>No.</th>
-					<th>Nama Barang</th>
-					<th>Jumlah</th>
-					<th>Harga Satuan</th>
-					<th>Sub Total</th>
-					<th>Action</th>
-				</tr>
-				
-				<?php
-				//Detail keranjang belanja
-				$total = 0;
-				$no = 1;
-				foreach($_SESSION['(belum tau)'] as $name => $value){
-					if($value > 0){
-							$get = mysql_query('SELECT * FROM tbl_barang WHERE id_barang='.mysql_real_escape_string((int)$name));
-							while($get_row = mysql_fetch_array($get)){
-								if($no % 2 == 0){
-									$warna = "#EAEAEA";
-								} else {
-									$warna = "#F4F4F4";
-								}
-								$sub = $get_row['harga_barang'] * $value;
-								echo '
-								<tr bgcolor="'.$warna.'">
-									<td align="center">'.$no.'</td>
-									<td align="center">'.$get_row['nama_barang'].'</td>
-									<td align="center">'.$value.'</td>
-									<td align="right">Rp. '.$get_row['harga_barang'].'</td>
-									<td align="right">Rp. '.$sub.'</td>
-									<td align="center">
-										<a href="detail_keranjang.php?add='.$name.'"><button>Tambah</button></a> 
-										<a href="detail_keranjang.php?remove='.$name.'"><button>Kurang</button></a> 
-										<a href="detail_keranjang.php?delete='.$name.'" onclick="return confirm(\'Anda Yakin?\');"><button>Batal</button></a><br>
-									</td>
-								</tr>							
-								';
-								$no++;
-							}
-							$total += $sub;
-						}
-					}
-				if($total == 0){
-					echo '<tr><td colspan="5" align="center">Keranjang belanja masih kosong!</td></tr></table>';
-					echo '<p><div align="right">
-						<a href="daftar-produk.html"><button>Lanjutkan Belanja</button></a>
-						</div></p>';
-				} else {
-					echo '
-						<tr style="background-color: #999999;"><td colspan="4" align="right"><b>Total :</b></td><td align="right"><b>Rp. '.$total.'</b></td></td></td><td></td></tr></table>
-						<p><div align="right">
-						<a href="index.php"><button>Lanjutkan Belanja</button></a>
-						<a href="selesai.php?total='.$total.'"><button>Lanjut ke Pembayaran</button></a>
-						</div></p>
-					';
-				}
-				?>
-			    <?php
-				// Menambah jumlah produk yang akan dibeli
-				if(isset($_GET['add'])){
-					$qt = mysql_query('SELECT barang_id, barang_jumlah FROM barang WHERE barang_id='.mysql_real_escape_string((int)$_GET['add']));
-					while($qt_row = mysql_fetch_array($qt)){
-						if($qt_row['barang_jumlah'] != $_SESSION['cart'][$_GET['add']]){
-							$_SESSION['cart'][$_GET['add']]+='1';
-							header("Location: detail_keranjang.php");
-						} else {
-							echo '<script language="javascript">alert("Stok barang tidak mencukupi"); document.location="detail_keranjang.php";</script>';
-						}
-					}
-				}
-				
-				// Menghapus jumlah produk yang akan dibeli
-				if(isset($_GET['remove'])){
-					$_SESSION['cart'][$_GET['remove']]--;
-					header("Location: detail_keranjang.php");
-				}
-				
-				// Menghapus semua produk yang akan dibeli
-				if(isset($_GET['delete'])){
-					$_SESSION['cart'][$_GET['delete']]='0';
-					header("Location: detail_keranjang.php");
-				}
-				?>
-			</table>
-
-		<div class="clear"></div>
 
 <!-- Akhir konten -->
 
