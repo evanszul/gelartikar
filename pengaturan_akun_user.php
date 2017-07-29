@@ -394,6 +394,83 @@ include 'sistem/cek_login.php';
           </div>
         </div>
       </div>
+      <div class="col9">
+        <div class="box-pengaturan bg-white">
+          <div class="box-pengaturan-header">
+            <h3> Informasi Akun </h3>
+          </div>
+          <div class="box-pengaturan-body input-group">
+            <form action="./sistem/simpan_akun.php" method="get">
+              <table width="100%">
+                <tr>
+                  <td> Nama </td>
+                  <td> : </td>
+                  <td> <input class="input-text" type="text"/> </td>
+                </tr>
+                <tr>
+                  <td> Email </td>
+                  <td> : </td>
+                  <td> <input class="input-text" type="text"/> </td>
+                </tr>
+                <tr>
+                  <td> Nomor HP </td>
+                  <td> : </td>
+                  <td> <input class="input-text" type="text"/> </td>
+                </tr>
+                <tr>
+                  <td> Password </td>
+                  <td> : </td>
+                  <td> <input class="input-text" type="password"/> </td>
+                </tr>
+                <tr>
+                  <td colspan="2"> </td>
+                  <td> <button class="button" type="submit">Simpan</button></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+        <div class="box-pengaturan bg-white">
+          <div class="box-pengaturan-header">
+            <h3> Informasi Alamat </h3>
+          </div>
+          <div class="box-pengaturan-body input-group">
+            <form action="/sistem/simpan_alamat.php" method="post">
+              <table width="100%">
+                <tr>
+                  <td> Kecamatan </td>
+                  <td> : </td>
+                  <td> <input class="input-text" type="text" name="kecamatan"/> </td>
+                </tr>
+                <tr>
+                  <td> Kota </td>
+                  <td> : </td>
+                  <td> <input class="input-text" type="text" name="kota"/> </td>
+                </tr>
+                <tr>
+                  <td> Kode Pos </td>
+                  <td> : </td>
+                  <td> <input class="input-text" type="text" name="kodepos"/> </td>
+                </tr>
+                <tr>
+                  <td> Provinsi </td>
+                  <td> : </td>
+                  <td> <input class="input-text" type="text" name="provinsi"/> </td>
+                </tr>
+                <tr>
+                  <td> Alamat </td>
+                  <td> : </td>
+                  <td> <textarea class="input-textarea" name="alamat"> </textarea> </td>
+                </tr>
+                <tr>
+                  <td colspan="2"> </td>
+                  <td> <button class="button" type="submit">Simpan</button></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
