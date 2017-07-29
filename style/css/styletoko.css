@@ -736,3 +736,17 @@ span a:hover{
     border: 1px ;
     border: 2px solid #f1f1f1;
 }
+
+.box-gagal{
+  padding: 10px;
+  width: 90%;
+  color: white;
+  background-color: #e74c3c;
+}
+
+.box-berhasil{
+  padding: 10px;
+  width: 90%;
+  color: white;
+  background-color: #2ecc71;
+}

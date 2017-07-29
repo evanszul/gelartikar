@@ -1,6 +1,10 @@
 <?php
 
+error_reporting('');
 include 'sistem/cek_login.php';
+
+$query_alamat = mysqli_query($koneksi,"SELECT * FROM tbl_alamat_user where id_user='$id_user'");
+$data_alamat_user = mysqli_fetch_assoc($query_alamat);
 
 ?>
 <html>
@@ -396,31 +400,43 @@ include 'sistem/cek_login.php';
       </div>
       <div class="col9">
         <div class="box-pengaturan bg-white">
+          <?php
+            $hasil = $_GET['hasil'];
+            if($hasil == 'berhasil'){
+          ?>
+          <div class="box-berhasil">
+            <b> Berhasil mengubah data! </b>
+          </div>
+          <?php
+        } else if($hasil == 'gagal'){
+          ?>
+          <div class="box-gagal">
+            <b> Gagal mengubah data!</b>
+          </div>
+          <?php
+            }
+          ?>
           <div class="box-pengaturan-header">
             <h3> Informasi Akun </h3>
           </div>
           <div class="box-pengaturan-body input-group">
-            <form action="./sistem/simpan_akun.php" method="get">
+            <form action="./sistem/simpan_akun.php" method="post">
+              <input type="hidden" name="id" value="<?php echo $data_user['id_user']; ?>">
               <table width="100%">
                 <tr>
                   <td> Nama </td>
                   <td> : </td>
-                  <td> <input class="input-text" type="text"/> </td>
+                  <td> <input class="input-text" type="text" name="nama" value="<?php echo $data_user['nama_user']; ?>"/> </td>
                 </tr>
                 <tr>
                   <td> Email </td>
                   <td> : </td>
-                  <td> <input class="input-text" type="text"/> </td>
+                  <td> <input class="input-text" type="text" name="email" value="<?php echo $data_user['email_user']; ?>"/> </td>
                 </tr>
                 <tr>
                   <td> Nomor HP </td>
                   <td> : </td>
-                  <td> <input class="input-text" type="text"/> </td>
-                </tr>
-                <tr>
-                  <td> Password </td>
-                  <td> : </td>
-                  <td> <input class="input-text" type="password"/> </td>
+                  <td> <input class="input-text" type="text" name="no_hp" value="<?php echo $data_user['tlp_user']; ?>"/> </td>
                 </tr>
                 <tr>
                   <td colspan="2"> </td>
@@ -435,32 +451,33 @@ include 'sistem/cek_login.php';
             <h3> Informasi Alamat </h3>
           </div>
           <div class="box-pengaturan-body input-group">
-            <form action="/sistem/simpan_alamat.php" method="post">
+            <form action="./sistem/simpan_alamat.php" method="post">
+              <input type="hidden" name="id" value="<?php echo $data_alamat_user['id_alamat_user']; ?>">
               <table width="100%">
                 <tr>
                   <td> Kecamatan </td>
                   <td> : </td>
-                  <td> <input class="input-text" type="text" name="kecamatan"/> </td>
+                  <td> <input class="input-text" type="text" name="kecamatan" value="<?php echo $data_alamat_user['kecamatan_au']; ?>"/> </td>
                 </tr>
                 <tr>
                   <td> Kota </td>
                   <td> : </td>
-                  <td> <input class="input-text" type="text" name="kota"/> </td>
+                  <td> <input class="input-text" type="text" name="kota" value="<?php echo $data_alamat_user['kota_au']; ?>"/> </td>
                 </tr>
                 <tr>
                   <td> Kode Pos </td>
                   <td> : </td>
-                  <td> <input class="input-text" type="text" name="kodepos"/> </td>
+                  <td> <input class="input-text" type="text" name="kodepos" value="<?php echo $data_alamat_user['kodepos_au']; ?>"/> </td>
                 </tr>
                 <tr>
                   <td> Provinsi </td>
                   <td> : </td>
-                  <td> <input class="input-text" type="text" name="provinsi"/> </td>
+                  <td> <input class="input-text" type="text" name="provinsi" value="<?php echo $data_alamat_user['provinsi_au']; ?>"/> </td>
                 </tr>
                 <tr>
                   <td> Alamat </td>
                   <td> : </td>
-                  <td> <textarea class="input-textarea" name="alamat"> </textarea> </td>
+                  <td> <textarea class="input-textarea" name="alamat"><?php echo $data_alamat_user['alamat_au']; ?> </textarea> </td>
                 </tr>
                 <tr>
                   <td colspan="2"> </td>
