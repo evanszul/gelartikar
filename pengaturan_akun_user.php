@@ -5,7 +5,7 @@ include 'sistem/cek_login.php';
 ?>
 <html>
 <head>
-  <title>GelarTikar.com</title>
+  <title>GelarTikar</title>
   <link rel="stylesheet" type="text/css" href="./style/css/styletoko.css" >
 </head>
 <body>
@@ -358,11 +358,11 @@ include 'sistem/cek_login.php';
 <div class="container bg-white">
   <div class="row">
       <div class="box-kategori">
-        <span class="judul-kategori"> Detail Transaksi</span>
+        <span class="judul-kategori"> Pengaturan</span>
       </div>
       <div class="breadcrumb">
         <span> <a href=""> Beranda </a> </span> /
-        <span class="breadcrumb-active"> <a href="#"> Detail Transaksi </a></span>
+        <span class="breadcrumb-active"> <a href="#"> Pengaturan </a></span>
       </div>
   </div>
   <div class="row">
